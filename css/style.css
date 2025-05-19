@@ -1,0 +1,23 @@
+body.bg-login {
+    background-image: url('../img/fta.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.6); /* Container mais transparente */
+    border-radius: 10px;
+    padding: 20px; /* Menos preenchimento */
+    margin-top: 50px; /* Ajuste a margem superior se necessário */
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.8); /* Card ligeiramente mais transparente */
+    border: none;
+    border-radius: 8px;
+}
