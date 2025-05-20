@@ -1,23 +1,151 @@
-body.bg-login {
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body.login {
     background-image: url('../img/fta.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
     background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body.inventario {
+    background-image: url('../img/fta.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body.cadastrar{
+    background-image: url('../img/fta.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body.editar{
+    background-image: url('../img/fta.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 body {
     font-family: sans-serif;
 }
 
+/* Remover o background-color e padding do .container */
 .container {
-    background-color: rgba(255, 255, 255, 0.6); /* Container mais transparente */
-    border-radius: 10px;
-    padding: 20px; /* Menos preenchimento */
-    margin-top: 50px; /* Ajuste a margem superior se necessário */
+    /* Removido: background-color: rgba(255, 255, 255, 0.6); */
+    /* Removido: padding: 20px; */
+    border-radius: 10px; /* Manter se você quiser as bordas arredondadas no container */
+    /* Podemos definir a largura máxima do container para ser um pouco maior que o card, se necessário */
+    max-width: 500px; /* Exemplo: ajustar a largura máxima do container */
 }
 
 .card {
-    background-color: rgba(255, 255, 255, 0.8); /* Card ligeiramente mais transparente */
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com transparência para o CARD */
     border: none;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 30px; /* Adicionar o padding diretamente ao CARD para o espaçamento interno */
+    width: 100%; /* Garante que o card ocupe 100% da largura do seu pai (col-md-6) */
+    max-width: 450px; /* Definir a largura máxima desejada para o card */
 }
+
+/* Estilos para as abas (Login, Cadastre-se) */
+.nav-tabs .nav-link {
+    cursor: pointer;
+}
+
+/* Opcional: ajustar a cor do texto para melhor leitura */
+label {
+    color: #333; /* Cor mais escura para o texto dos labels */
+}
+
+.verdeEscuro {
+    /* color: #01611a; Cor azul escura */
+    background-color: #01611b7c;
+    color: black
+}
+.verdeEscuro:hover {
+    background-color: #01611b; /* Cor azul escura */
+    color: white;
+}
+.verdeEscuro:active {
+    background-color: #01611b; /* Cor azul escura */
+    color: white;
+}
+
+.verdeClaro {
+    /* color: #76be8e; Cor azul clara */
+    background-color: rgba(212, 255, 224, 0.7);
+}
+
+
+/* Estilos para as abas (Login, Cadastre-se) */
+.nav-tabs .nav-link {
+    cursor: pointer;
+    color: #495057; /* Cor padrão do texto para abas não selecionadas */
+    background-color: transparent; /* Fundo transparente para abas não selecionadas */
+    border: none; /* Remove bordas padrão se existirem */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave para o efeito */
+}
+
+/* Estilos para a aba ATIVA (selecionada) */
+.nav-tabs .nav-link.active {
+    background-color: #01611a; /* Cor de fundo para a aba selecionada (seu verde) */
+    color: #fff; /* Cor do texto branco para contrastar */
+    border-radius: 0.25rem 0.25rem 0 0; /* Arredondar apenas os cantos superiores */
+    /* Remove a borda inferior que o Bootstrap pode adicionar à aba ativa */
+    border-bottom-color: transparent !important;
+}
+
+/* Estilos para o hover (passar o mouse) em abas não ativas */
+.nav-tabs .nav-link:not(.active):hover {
+    background-color: rgba(1, 97, 26, 0.2); /* Um verde claro e transparente no hover */
+    color: #01611a; /* Cor do texto da aba não ativa no hover */
+}
+
+/* Opcional: ajustar a borda inferior do nav-tabs para combinar com o fundo do card */
+.nav-tabs {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Borda sutil que se mistura melhor */
+}
+
+/* Se você tem um .card ou .tab-content, pode querer garantir que o fundo seja limpo abaixo da aba */
+.card .tab-content {
+    background-color: rgba(255, 255, 255, 0.8); /* O mesmo fundo transparente que o card */
+    padding-top: 15px; /* Adiciona um pequeno padding para o conteúdo da aba */
+    border-radius: 0 0 8px 8px; /* Arredonda apenas os cantos inferiores */
+}
+
+/* Certifique-se de que o card em si não tenha padding que interfira */
+.card {
+    /* ... seus estilos existentes ... */
+    padding: 0; /* Remover padding do card, pois o padding será no .tab-content */
+    overflow: hidden; /* Garante que o conteúdo não vaze */
+}
+/* ... seu código CSS existente ... */
+
+.card .tab-content {
+    background-color: rgba(212, 255, 224, 0); /* Um verde bem suave e transparente */
+    padding-top: 15px;
+    border-radius: 0 0 8px 8px;
+}
+
+/* ... restante do seu código CSS ... */

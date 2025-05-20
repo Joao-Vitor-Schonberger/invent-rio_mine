@@ -62,21 +62,21 @@ if (isset($_POST['cadastrar'])) {
         }
     </style>
 </head>
-<body class="bg-light bg-login">
+<body class="bg-light login">
     <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-md-6">
-                <div class="card p-4">
+                <div class="card p-4 verdeClaro">
                     <ul class="nav nav-tabs nav-justified mb-4" id="myTab" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" id="login-tab" data-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="true">Login</a>
+                        <li class="nav-item ">
+                            <a class="nav-link active " id="login-tab" data-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="true">Login</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item ">
                             <a class="nav-link" id="cadastro-tab" data-toggle="tab" href="#cadastro" role="tab" aria-controls="cadastro" aria-selected="false">Cadastre-se</a>
                         </li>
                     </ul>
                     <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                        <div class="tab-pane fade show active " id="login" role="tabpanel" aria-labelledby="login-tab">
                             <form method="POST">
                                 <div class="form-group">
                                     <label for="email">Email:</label>
@@ -89,7 +89,7 @@ if (isset($_POST['cadastrar'])) {
                                 <?php if ($erro_login): ?>
                                     <div class="alert alert-danger"><?php echo $erro_login; ?></div>
                                 <?php endif; ?>
-                                <button type="submit" class="btn btn-primary btn-block" name="login">Entrar</button>
+                                <button type="submit" class="btn btn-primary btn-block verdeEscuro" name="login">Entrar</button>
                             </form>
                         </div>
                         <div class="tab-pane fade" id="cadastro" role="tabpanel" aria-labelledby="cadastro-tab">
@@ -116,7 +116,7 @@ if (isset($_POST['cadastrar'])) {
                                 <?php if ($mensagem_cadastro): ?>
                                     <div class="alert alert-success"><?php echo $mensagem_cadastro; ?></div>
                                 <?php endif; ?>
-                                <button type="submit" class="btn btn-success btn-block" name="cadastrar">Cadastrar</button>
+                                <button type="submit" class="btn btn-success btn-block verdeEscuro" name="cadastrar">Cadastrar</button>
                             </form>
                         </div>
                     </div>

@@ -58,8 +58,8 @@ if (isset($_POST['atualizar_item'])) {
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
-    <div class="container mt-5">
+<body class="bg-light editar">
+    <div class="container mt-5 verdeClaro">
         <h1>Editar Item</h1>
 
         <?php if ($mensagem): ?>
@@ -83,7 +83,7 @@ if (isset($_POST['atualizar_item'])) {
                 <label for="descricao">Descrição (Opcional):</label>
                 <textarea class="form-control" id="descricao" name="descricao"><?php echo htmlspecialchars($item['descricao']); ?></textarea>
             </div>
-            <button type="submit" class="btn btn-primary" name="atualizar_item">Salvar Alterações</button>
+            <button type="submit" class="btn btn-primary verdeEscuro" name="atualizar_item">Salvar Alterações</button>
             <a href="inventario.php" class="btn btn-secondary ml-2">Cancelar</a>
         </form>
     </div>

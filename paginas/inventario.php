@@ -33,8 +33,8 @@ if (isset($_GET['excluir'])) {
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
-    <div class="container mt-5">
+<body class="bg-light inventario">
+    <div class="container mt-5 verdeClaro">
         <h1>Seu Inventário Minecraft</h1>
         <p><a href="cadastrar_item.php" class="btn btn-success mb-3">Adicionar Item</a></p>
 

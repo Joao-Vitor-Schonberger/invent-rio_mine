@@ -53,8 +53,8 @@ if (isset($_POST['salvar_item'])) {
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
-    <div class="container mt-5">
+<body class="bg-light cadastrar">
+    <div class="container mt-5 verdeClaro">
         <h1>Cadastrar Novo Item</h1>
 
         <?php if ($mensagem): ?>
@@ -77,7 +77,7 @@ if (isset($_POST['salvar_item'])) {
                 <label for="descricao">Descrição (Opcional):</label>
                 <textarea class="form-control" id="descricao" name="descricao"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary" name="salvar_item">Salvar Item</button>
+        <button type="submit" class="btn btn-primary verdeEscuro" name="salvar_item">Salvar Item</button>
             <a href="inventario.php" class="btn btn-secondary ml-2">Cancelar</a>
         </form>
     </div>
